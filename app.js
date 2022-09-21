@@ -105,10 +105,7 @@ app.put('/student/:id', (req, res) => {
     let Dept = req.body.dept;
 
 
-    let sql = `update student_info set age = '${Age}' where id= '${gID}'`;
-    let sql1 = `update student_info set username = '${user_name}' where id= '${gID}'`;
-    let sql2 = `update student_info set reg_no = '${Reg_No}' where id= '${gID}'`;
-    let sql3 = `update student_info set dept = '${Dept}' where id= '${gID}'`;
+    let sql = `update student_info set reg_no = '${Reg_No}', username = '${user_name}', age = '${Age}', dept = '${Dept}'  where id= '${gID}'`;
     console.log('UPDATE QUERY: ', sql);
     con.query(sql, (err, result) => {
         if (err) { console.log(err); }
