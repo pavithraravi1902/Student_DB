@@ -11,7 +11,7 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-//cors for cors origin resource sharing 
+//cors for cors origin resource sharing s
 var cors = require('cors');
 app.use(cors());
 
