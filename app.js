@@ -1,4 +1,4 @@
-//this is the first js file 
+//this is the first js files
 const express = require('express');
 const app = express();
 var mysql = require('mysql');
